@@ -22,7 +22,7 @@ export default async function Docs({ params }: {
     else {
         return (
             <>
-                <h1>Welcome Sub Docs</h1>
+                <h1>Docs Home Page</h1>
             </>
         )
     }
