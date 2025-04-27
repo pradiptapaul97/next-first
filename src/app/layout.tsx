@@ -11,14 +11,34 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header style={{ backgroundColor: "lightblue", padding: '1rem' }}>
-          <h1>My Website</h1>
-        </header>
+        <HeaderLayout />
         {children}
-        <footer style={{ backgroundColor: "ghostwhite", padding: '1rem' }}>
-          <p>&copy; 2025 My Website. All Rights Reserved.</p>
-        </footer>
+        <FooterLayout />
       </body>
     </html>
+  )
+}
+
+function HeaderLayout() {
+  return (
+    <header style={{
+      backgroundColor: "lightblue",
+      padding: '1rem',
+      textAlign: "center"
+    }}>
+      <h1>My Website</h1>
+    </header>
+  )
+}
+
+function FooterLayout() {
+  return (
+    <footer style={{
+      backgroundColor: "ghostwhite",
+      padding: '1rem',
+      textAlign: "center"
+    }}>
+      <p>&copy; 2025 My Website. All Rights Reserved.</p>
+    </footer>
   )
 }
