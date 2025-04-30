@@ -38,7 +38,7 @@ function FooterLayout() {
       padding: '1rem',
       textAlign: "center"
     }}>
-      <p>&copy; 2025 My Website. All Rights Reserved.</p>
+      <p>&copy; {new Date().getFullYear()} My Website. All Rights Reserved.</p>
     </footer>
   )
 }
