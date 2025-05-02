@@ -17,9 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* <HeaderLayout /> */}
+        <HeaderLayout />
         {children}
-        {/* <FooterLayout /> */}
+        <FooterLayout />
       </body>
     </html>
   )
@@ -44,7 +44,7 @@ function FooterLayout() {
       padding: '1rem',
       textAlign: "center"
     }}>
-      <p>&copy; {new Date().getFullYear()} My Website. All Rights Reserved.</p>
+      <p>&copy; 2025 My Website. All Rights Reserved.</p>
     </footer>
   )
 }
